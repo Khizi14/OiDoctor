@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/pLoginCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN PATIENT"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/pLoginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColorHint="#888888"
+                android:hint="Username"
+                android:textColor="@color/black"
+                android:paddingHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/pLoginPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="#888888"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:paddingHorizontal="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pLoginCreateAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="15dp"
+                    android:text="CREATE ACCOUNT"/>
+
+                <Button
+                    android:id="@+id/pLoginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/black"
+                    android:text="Login"
+                    app:cornerRadius="20dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/dLoginCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN DOCTOR"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/dLoginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColorHint="#888888"
+                android:hint="Username"
+                android:textColor="@color/black"
+                android:paddingHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/dLoginPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="#888888"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:paddingHorizontal="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dLoginCreateAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="15dp"
+                    android:text="REGISTER DOCTOR"/>
+
+                <Button
+                    android:id="@+id/dLoginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/black"
+                    android:text="Login"
+                    app:cornerRadius="20dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/dSignUpCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTER DOCTOR"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/dSignUpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColorHint="#888888"
+                android:hint="Name"
+                android:textColor="@color/black"
+                android:paddingHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/dSignUpExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="#888888"
+                android:hint="Experience"
+                android:textColor="@color/black"
+                android:paddingHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/dSignUpUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="#888888"
+                android:hint="Username"
+                android:textColor="@color/black"
+                android:paddingHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/dSignUpPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="#888888"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:paddingHorizontal="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dSignUpLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="15dp"
+                    android:text="LOGIN DOCTOR"/>
+
+                <Button
+                    android:id="@+id/dSignUpBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/black"
+                    android:text="Sign Up"
+                    app:cornerRadius="20dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/pSignUpCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTER PATIENT"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/pSignUpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColorHint="#888888"
+                android:hint="Name"
+                android:textColor="@color/black"
+                android:paddingHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/pSignUpAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="#888888"
+                android:hint="Date of Birth"
+                android:textColor="@color/black"
+                android:paddingHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/pSignUpUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="#888888"
+                android:hint="Username"
+                android:textColor="@color/black"
+                android:paddingHorizontal="10dp"/>
+            <EditText
+                android:id="@+id/pSignUpPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="#888888"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:paddingHorizontal="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pSignUpLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="15dp"
+                    android:text="LOGIN PATIENT"/>
+
+                <Button
+                    android:id="@+id/pSignUpBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/black"
+                    android:text="Sign Up"
+                    app:cornerRadius="20dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/homeCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O! DOCTOR APP"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:lottie_rawRes="@raw/home"
+                android:layout_weight="1"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/dlBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:cornerRadius="20dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Doctor\nLog In"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/black"
+                    android:layout_margin="10dp"
+                    android:drawableTop="@drawable/dl"
+                    />
+
+                <Button
+                    android:id="@+id/plBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:cornerRadius="20dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:text="Patient\nLog In"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/black"
+                    android:layout_margin="10dp"
+                    android:drawableTop="@drawable/pl"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/dsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:cornerRadius="20dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:text="Doctor\nSign Up"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/black"
+                    android:layout_margin="10dp"
+                    android:drawableTop="@drawable/ds"
+                    />
+
+                <Button
+                    android:id="@+id/psBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:cornerRadius="20dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:text="Patient\nSign Up"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/black"
+                    android:layout_margin="10dp"
+                    android:drawableTop="@drawable/ps"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
